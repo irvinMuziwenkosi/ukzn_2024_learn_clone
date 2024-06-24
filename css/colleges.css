@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::after,
+*:any-link,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #00a651;
+  --primary-color-d: #1aa732fd;
+  --white: #fff;
+  --black: #000;
+  /*--red: #1aa732fd; */
+  --red: #e30b18;
+  /*--primary-color: #e30b18;
+  --primary-color-d: #e30b18; */
+  --blue: #00aeef;
+  --yellow: #f99d1c;
+
+  --border: 1px solid #c2bebe;
+  --light-grey: #c2bebe;
+  --dark-grey: #808080;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-inline: 4rem;
+}
+
+.preview {
+  background: var(--primary-color);
+  width: 100%;
+  gap: 1rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.preview .fa-flask {
+  font-size: 5rem;
+}
+.preview a {
+  color: var(--black);
+  border-radius: 5px;
+  margin-block: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: var(--light-grey);
+}
