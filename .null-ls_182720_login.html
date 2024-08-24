@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log in | Learn 2024</title>
   <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="shortcut icon" href="img/UKZN_logo.svg.png" type="image/x-icon" />
+  <link
+      rel="shortcut icon"
+      href="img/UKZN_logo.svg.png"
+      type="image/x-icon"
+  />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
   <main>
     <section id="login-wrapper">
       <div class="login-padding">
         <img src="img/UKZN_logo and slogan.svg.png" alt="logo with slogan">
-        <form id="login-form" action="index.html" onsubmit="return validateForm()">
-          <input id="username" type="texa" placeholder="Username or email" required>
-          <input id="paswd" type="password" placeholder="Password" required>
-          <div class="hidden" id="toggle-paswd">
-            <i class="fa fa-eye-slash" aria-hidden="true"></i>
-          </div>
+        <form action="" id="login-form">
+          <input type="texa" placeholder="Username or email">
+          <input type="password" placeholder="Password">
           <button id="submit-btn" type="submit">Log in</button>
-          <em class="hidden" id="loggin-error">Invalid user-credentials!</em>
           <a href="#">Lost password?</a>
         </form>
         <hr>
@@ -46,36 +44,32 @@
 
   <!-- Footer -->
   <footer>
-    <div class="wrapper">
-      <div class="top-wrapper">
-        <div class="f-left">
-          <h2>CALL CENTRE: x4000</h2>
-          <a href="tel:+27312604000"> <i class="fa fa-phone-square f-phone" aria-hidden="true"></i> <b>(031 260
-              4000)</b></a>
-          <br>
-          <a href="" id="ics-w-i"> <i class="fa fa-life-bouy" aria-hidden="true"></i> ICS Walk-in Centres</a>
-        </div>
-        <div class="f-right">
-          <h2>Get the mobile app</h2>
-          <a href="">
-            <img id="img-tf-right-1" src="img/store_google.svg" alt="Download at Google Play Store">
-          </a>
-          <a href="">
-            <img id="img-tf-right-2" src="img/store_apple.svg" alt="Download At App Store">
-          </a>
-        </div>
+    <div class="wrapper"><div class="top-wrapper">
+      <div class="f-left">
+        <h2>CALL CENTRE: x4000</h2>
+        <a href="tel:+27312604000"> <i class="fa fa-phone-square f-phone" aria-hidden="true"></i> <b>(031 260 4000)</b></a>
+        <br>
+        <a href="" id="ics-w-i"> <i class="fa fa-life-bouy" aria-hidden="true"></i> ICS Walk-in Centres</a>
       </div>
+      <div class="f-right">
+        <h2>Get the mobile app</h2>
+        <a href="">
+          <img id="img-tf-right-1" src="img/store_google.svg" alt="Download at Google Play Store">
+        </a>
+        <a href="">
+          <img id="img-tf-right-2" src="img/store_apple.svg" alt="Download At App Store">
+        </a>
+      </div>
+    </div>
       <div class="bottom-wrapper">
         <div class="s-media">
           <a href="https://www.facebook.com/ukzn1"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
           <a href="https://www.instagram.com/ukzn/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           <a href="twitter.com/ukzn/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="https://www.youtube.com/user/UKZNSouthAfrica"><i class="fa fa-youtube-play"
-              aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/user/UKZNSouthAfrica"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
           <a href="https://www.ukzn.ac.za"><i class="fa fa-university" aria-hidden="true"></i></a>
         </div>
-        <span id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>2024 University of KwaZulu-Natal: by
-          Irvin Muziwenkosi</span>
+        <span id="copyright"><i class="fa fa-copyright" aria-hidden="true"></i>2024 University of KwaZulu-Natal: by Irvin Muziwenkosi</span>
       </div>
     </div>
   </footer>
@@ -84,7 +78,7 @@
   <div class="info">
     <div class="icon">
       <span>&quest;</span>
-      <div class="hidden main-text">
+      <div class="main-text hidden">
         <p>You are not logged in.</p>
         <div class="midle-links">
           <a href="#">Data retention summary.</a>
@@ -95,9 +89,7 @@
     </div>
   </div>
   <script>
-
+    
   </script>
-  <script src="login.js" />
 </body>
-
 </html>

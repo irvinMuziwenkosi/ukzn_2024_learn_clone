@@ -9,20 +9,22 @@
   padding: 0;
   text-decoration: none;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 :root {
   --primary-color: #00a651;
-  --primary-color-d: #1aa732fd; 
+  --primary-color-d: #1aa732fd;
   --white: #fff;
   --black: #000;
   /*--red: #1aa732fd; */
-  --red: #e30b18; 
+  --red: #e30b18;
   /*--primary-color: #e30b18;
   --primary-color-d: #e30b18; */
   --blue: #00aeef;
@@ -44,7 +46,13 @@ Collegies */
   margin: 7rem 0 2.8rem 4.62rem;
   font-size: 29px;
   font-stretch: semi-expanded;
+
+  @media screen and (max-width: 760px) {
+    margin: 6rem 0 2rem 3rem;
+  }
+
 }
+
 .collegies .colleges-wrapper {
   margin-left: 6.7rem;
   display: flex;
@@ -52,9 +60,17 @@ Collegies */
   max-width: calc(100% - 13.4rem);
   max-height: -moz-fit-content;
   max-height: fit-content;
+  /* background-color: red; */
   column-gap: 2rem;
   row-gap: 2rem;
+
+  @media screen and (max-width: 760px) {
+    margin-left: 2rem;
+    /* min-width: 90%; */
+    max-width: fit-content;
+  }
 }
+
 .collegies .college {
   height: 12.5rem;
   width: 17.37rem;
@@ -65,75 +81,98 @@ Collegies */
   position: relative;
   border-radius: 7px;
   box-shadow: 0 12px 12px #c9bfbf;
+
+  @media screen and (max-width: 760px) {
+    width: 45rem;
+    border-radius: 15px;
+    height: 16rem;
+  }
 }
+
 .colleges-wrapper .college:first-child {
   background-color: var(--primary-color);
 }
+
 .colleges-wrapper .college:first-child .name {
   color: var(--primary-color);
   -webkit-text-fill-color: var(--white);
   -webkit-text-stroke: 0.3px var(--primary-color);
 }
+
 .colleges-wrapper .college:nth-child(2) {
   background-color: var(--dark-grey);
 }
+
 .colleges-wrapper .college:nth-child(2) .name {
   color: var(--dark-grey);
   -webkit-text-fill-color: var(--white);
   -webkit-text-stroke: 0.3px var(--dark-grey);
 }
+
 /* 3rs */
 .colleges-wrapper .college:nth-child(3) {
   background-color: var(--blue);
 }
+
 .colleges-wrapper .college:nth-child(3) .name {
   color: var(--blue);
   -webkit-text-fill-color: var(--white);
   -webkit-text-stroke: 0.3px var(--blue);
 }
+
 /* 4th */
 .colleges-wrapper .college:nth-child(4) {
   background-color: var(--yellow);
 }
+
 .colleges-wrapper .college:nth-child(4) .name {
   color: var(--yellow);
   -webkit-text-fill-color: var(--white);
   -webkit-text-stroke: 0.3px var(--yellow);
 }
+
 /* 5th */
 .colleges-wrapper .college:nth-child(5) {
   background-color: var(--red);
 }
+
 .colleges-wrapper .college:nth-child(5) .name {
   color: var(--red);
   -webkit-text-fill-color: var(--white);
   -webkit-text-stroke: 0.3px var(--red);
 }
+
 /* 6th */
 .colleges-wrapper .college:last-child {
   background-color: var(--yellow);
 }
+
 .colleges-wrapper .college:last-child .name {
   color: var(--yellow);
   -webkit-text-fill-color: var(--white);
   -webkit-text-stroke: 0.3px var(--yellow);
 }
+
 .colleges-wrapper .college i {
   font-size: 5rem;
   top: 40px;
   color: var(--white);
 }
+
 .colleges-wrapper .college:last-child .c-contacts {
   position: relative;
   bottom: 1.2rem;
   margin-bottom: 1rem;
 }
+
 .colleges-wrapper .college .small {
   font-size: 1rem;
 }
+
 .colleges-wrapper .college .small b {
   font-family: 'Roboto', sans-serif;
 }
+
 .colleges-wrapper .college .name {
   position: absolute;
   bottom: 0;
@@ -143,6 +182,11 @@ Collegies */
   display: flex;
   justify-content: center;
   background-color: #0006;
+
+  @media screen and (max-width: 760px){
+    width: 100%;
+    border-radius: 15px;
+  }
 }
 
 /* Courses */
@@ -152,6 +196,7 @@ Collegies */
   flex-direction: column;
   position: relative;
 }
+
 .courses hr {
   width: 89%;
   height: 0.2px;
@@ -160,6 +205,7 @@ Collegies */
   margin-block: 1rem;
   margin-inline: auto;
 }
+
 .courses h2,
 .courses p {
   margin-left: 4.4rem;
@@ -171,16 +217,28 @@ Collegies */
   display: flex;
   flex-direction: column;
   margin: 4.4rem;
+  width: fit-content;
+
   /* background-color: #00afef52; */
+  @media screen and (max-width: 760px) {
+    margin: 2rem;
+  }
 }
+
 .announcemt h1 {
   font-size: 28px;
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 760px) {
+    margin-bottom: 1rem;
+  }
 }
+
 .announcemt ul {
   padding-left: 3rem;
   line-height: 20px;
 }
+
 .announcemt .article-wrap {
   border: var(--border);
   display: flex;
@@ -189,24 +247,31 @@ Collegies */
   position: relative;
   font-size: 15px;
 }
+
 .announcemt .article-wrap .as-icon {
   height: 3rem;
   border-radius: 50%;
 }
+
 .announcemt .article-wrap .ann-icon {
   font-size: 28px;
   margin-right: 3px;
 }
+
 .announcemt .article-wrap .text {
   margin-left: 8px;
   width: 100%;
   position: relative;
   right: 0;
   padding-bottom: 4rem;
+  text-wrap: wrap;
 }
+
 .announcemt .article-wrap .text p {
   width: 100%;
+  text-wrap: wrap;
 }
+
 .announcemt .article-wrap .lean-right {
   position: absolute;
   right: 0;
@@ -216,16 +281,19 @@ Collegies */
   align-items: end;
   margin-top: 2rem;
 }
+
 a,
 .announcemt a,
 footer a,
 footer .top-wrapper h2 {
   color: var(--primary-color);
 }
+
 .announcemt .ann-txt3 {
   display: flex;
   flex-direction: column;
 }
+
 .announcemt .ann-frame {
   align-self: center;
   border: none;
@@ -243,6 +311,7 @@ footer .top-wrapper h2 {
   box-shadow: 0 0 10px 1px var(--primary-color);
   border-radius: 50%;
 }
+
 #to-top i {
   margin-bottom: 3px;
   font-size: small;

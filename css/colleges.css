@@ -48,7 +48,7 @@ main {
 }
 
 .preview {
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   width: 100%;
   gap: 1rem;
   color: var(--white);
