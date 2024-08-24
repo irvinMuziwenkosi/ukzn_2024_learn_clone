@@ -46,3 +46,18 @@ bodyEl.addEventListener('click', () => {
   iconLang.classList.remove('fa-chevron-up');
   iconLang.classList.add('fa-chevron-down');
 });
+
+let canScroll = false;
+const goToTop = document.getElementById('to-top');
+goToTop.addEventListener('click', () => {
+  if (canScroll) window.scrollTo(0, 0);
+});
+window.addEventListener('scroll', () => {
+  if (document.documentElement.scrollTop > 60) {
+    canScroll = true;
+    goToTop.style.display = 'flex';
+  } else {
+    canScroll = 'false';
+    goToTop.style.display = 'none';
+  }
+});
